@@ -1,0 +1,26 @@
+/* FLEX */
+
+* {
+    display: flex;
+    flex-direction: column;
+}
+
+.container {
+    display: flex;
+}
+
+select {
+    align-items: center;
+    justify-content: center;
+}
+
+input[type="text"]::placeholder,
+input[type="email"]::placeholder {
+    display: flex;
+    justify-content: flex-end;
+}
+
+button {
+    align-items: center;
+    justify-content: center;
+}
