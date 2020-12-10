@@ -1,27 +1,24 @@
 /* FLEX */
 
-* {
+.container2 {
     display: flex;
     flex-direction: column;
-    flex-wrap: wrap;
-}
-
-.container {
-    display: flex;
-}
-
-select {
-    align-items: center;
-    justify-content: center;
-}
-
-input[type="text"]::placeholder,
-input[type="email"]::placeholder {
-    display: flex;
-    justify-content: flex-end;
 }
 
 button {
     align-items: center;
     justify-content: center;
+}
+
+@media (min-width: 768px) {
+    .flex-pair {
+       display: flex; 
+       flex-direction: row;
+       padding: 30px;
+    }
+
+    .flex-pair input {
+        flex-grow: 1;
+    }
+
 }
