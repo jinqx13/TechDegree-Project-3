@@ -179,11 +179,7 @@ textarea {
 }
 
 
-@media (min-width: 768px) {
-    body {
-       margin: auto;
-    }
-
+@media (min-width: 768px) { 
     form {
         width: 700px;
     }
@@ -195,13 +191,23 @@ textarea {
     .flex-pair {
         display: flex; 
         flex-direction: row;
-        padding: 30px;
+        padding: 20px 0;
         justify-content: space-between;
      }
 
      .flex-pair input, select {
         flex-basis: 75%;
      }
+
+    input[type="text"],
+    input[type="email"],
+    input[type="phone"],
+    input[type="street_address"],
+    input[type="city"],
+    input[type="zipcode"] {
+        display: flex;
+        justify-content: end;
+    }
 
     .container1 {
         width: 700px;
@@ -211,7 +217,4 @@ textarea {
         width: 700px;
     }
 
-    .zip_code {
-        width: 30%;
-    }
 }
